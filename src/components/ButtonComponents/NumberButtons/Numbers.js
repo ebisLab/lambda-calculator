@@ -26,7 +26,11 @@ const Numbers = (props) => {
        {/* {numVal.map((n,i) => (<NumberButton number={n.number} />))} */}
        {/* <NumberButton /> */}
        {numVal.map(number => {
-       return (<NumberButton key={number} number={number} addNum = {props.addNum}>
+       return (<NumberButton 
+       key={number} 
+       number={number} 
+       addNum = {props.addNum}
+       set ={props.set}>
          {console.log('numarray', numarray)}
        </NumberButton>)
        

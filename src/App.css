@@ -65,3 +65,8 @@ body{
 .right{
     width: 270px;
 }
+
+button.btn:nth-child(10) {
+    width: 160px;
+    border-radius: 70px;
+}
