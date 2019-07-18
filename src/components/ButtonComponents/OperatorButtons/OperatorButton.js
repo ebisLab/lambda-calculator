@@ -4,7 +4,7 @@ const OperatorButton = (props) => {
   return (
     <button> hh
       {/* Display a button element rendering the data being passed down from the parent container on props */}
-      {props.operator}
+      {props.operator.char}
     </button>
     
   );

@@ -17,7 +17,8 @@ const Numbers = () => {
        it any props needed by the child component*/}
        {/* {numVal.map((n,i) => (<NumberButton key={i} number={n} />))} */}
        {/* {numVal.map((n,i) => (<NumberButton number={n.number} />))} */}
-       {numVal.map(number => <NumberButton number={number} />)}
+       {/* <NumberButton /> */}
+       {numVal.map(number => <NumberButton key={number} number={number} />)}
 
     </div>
   );

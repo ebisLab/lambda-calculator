@@ -17,7 +17,8 @@ const [specialData, setSpecialData] = useState(specials)
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
        {/* {specialData.map(special => <SpecialButton special={special} />)} */}
-       {specialData.map(special => (<SpecialButton key={Math.random()} val={special} />))}
+       {/* {specialData.map(special => (<SpecialButton key={Math.random()} val={special} />))} */}
+       {specialData.map(special => <SpecialButton special={special} />)}
 
     </div>
   );
