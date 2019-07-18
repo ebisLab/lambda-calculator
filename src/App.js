@@ -22,13 +22,16 @@ function App() {
   // Don't forget to pass the functions (and any additional data needed) to the components as props
 
   const [displayValue, setDisplayValue] = useState("0")
+  const addNum = (number) => {
+    setDisplayValue(displayValue => displayValue + number);
+  }
   return (
     <div className="container">
       <Logo />
       <div className="App">
       <Display number={displayValue} />
         <Specials />
-        <Numbers />
+        <Numbers addNum={addNum} />
         <Operators />
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
      
